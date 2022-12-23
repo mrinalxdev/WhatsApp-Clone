@@ -1,11 +1,16 @@
 import React from 'react'
+import ChatHeader from './components/ChatHeader'
+import Contacts from './components/Contacts'
 import ProfileHeader from './components/ProfileHeader'
 
 const App = () => {
   return (
-    <div>
-      <h1 className='caret-red-500'>hello</h1>
-      <ProfileHeader/>
+    <div className='bg-black'>
+      <div className='flex'>
+        <ProfileHeader />
+        <ChatHeader />
+      </div>
+      <Contacts name="Name" disc="Discription of the last message" />
     </div>
   )
 }
